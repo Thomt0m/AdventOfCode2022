@@ -12,7 +12,8 @@ namespace AoC_ConsoleApp
             // Add/remove any puzzles you wish to run here
             List<IPuzzle> puzzles = new()
             {
-                new D01_CalorieCounting(),
+                //new D01_CalorieCounting(),
+                new D02_RockPaperScissors(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
