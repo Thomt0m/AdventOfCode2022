@@ -13,7 +13,8 @@ namespace AoC_ConsoleApp
             List<IPuzzle> puzzles = new()
             {
                 //new D01_CalorieCounting(),
-                new D02_RockPaperScissors(),
+                //new D02_RockPaperScissors(),
+                new D03_RucksackReorganization(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
