@@ -15,14 +15,23 @@ namespace AoC_ConsoleApp
                 //new D01_CalorieCounting(),
                 //new D02_RockPaperScissors(),
                 //new D03_RucksackReorganization(),
-                new D04_CampCleanup(),
+                //new D04_CampCleanup(),
+                new D05_SupplyStacks(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
             {
                 Console.WriteLine($"Day {puzzle.Day}: {puzzle.Name}");
-                Console.WriteLine($"Part 1: {puzzle.Run_Part1()}");
-                Console.WriteLine($"Part 2: {puzzle.Run_Part2()}\n");
+
+                string answer1;
+                try { answer1 = puzzle.Run_Part1(); }
+                catch (NotImplementedException) { answer1 = "Not yet completed"; }
+                string answer2;
+                try { answer2 = puzzle.Run_Part2(); }
+                catch (NotImplementedException) { answer2 = "Not yet completed"; }
+
+                Console.WriteLine($"Part 1: {answer1}");
+                Console.WriteLine($"Part 2: {answer2}\n");
             }
         }
 
