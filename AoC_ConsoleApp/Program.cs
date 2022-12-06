@@ -16,7 +16,8 @@ namespace AoC_ConsoleApp
                 //new D02_RockPaperScissors(),
                 //new D03_RucksackReorganization(),
                 //new D04_CampCleanup(),
-                new D05_SupplyStacks(),
+                //new D05_SupplyStacks(),
+                new D06_TuningTrouble(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
