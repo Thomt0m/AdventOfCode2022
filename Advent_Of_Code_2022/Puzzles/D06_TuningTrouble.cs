@@ -81,28 +81,7 @@
             //line = "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw";
             line = _input[0];
 
-            int packetLength = 4;
-            bool restart = false;
-
-            for (int start = 0; start < line.Length - packetLength; start++)
-            {
-                for (int p1 = start; p1 < start + packetLength - 1; p1++)
-                {
-                    for (int p2 = p1 + 1; p2 < start + packetLength; p2++)
-                    {
-                        if (line[p1] == line[p2])
-                        {
-                            start = p1;
-                            restart = true;
-                        }
-                        if (restart) break;
-                    }
-                    if (restart) break;
-                }
-                if (!restart) return (start + packetLength).ToString();
-                restart = false;
-            }
-            return "No \'start-of-packet\' marker detected";
+            return FindStartOfPacket(line, 4);
         }
 
         public string Run_Part2()
@@ -115,7 +94,12 @@
             //line = "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw";
             line = _input[0];
 
-            int packetLength = 14;
+            return FindStartOfPacket(line, 14);
+        }
+
+
+        private string FindStartOfPacket(ReadOnlySpan<char> line, int packetLength)
+        {
             bool restart = false;
 
             for (int start = 0; start < line.Length - packetLength; start++)
