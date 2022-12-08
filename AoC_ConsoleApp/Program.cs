@@ -18,7 +18,8 @@ namespace AoC_ConsoleApp
                 //new D04_CampCleanup(),
                 //new D05_SupplyStacks(),
                 //new D06_TuningTrouble(),
-                new D07_NoSpaceLeftOnDevice(),
+                //new D07_NoSpaceLeftOnDevice(),
+                new D08_TreetopTreeHouse(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
