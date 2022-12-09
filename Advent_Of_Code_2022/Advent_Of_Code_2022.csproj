@@ -13,11 +13,5 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Inputs\08.txt" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Content Include="Inputs\08.txt" />
-	</ItemGroup>
 	
 </Project>
