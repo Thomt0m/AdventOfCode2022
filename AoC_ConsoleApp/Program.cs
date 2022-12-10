@@ -20,7 +20,8 @@ namespace AoC_ConsoleApp
                 //new D06_TuningTrouble(),
                 //new D07_NoSpaceLeftOnDevice(),
                 //new D08_TreetopTreeHouse(),
-                new D09_RopeBridge(),
+                //new D09_RopeBridge(),
+                new D10_CathodeRayTube(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
