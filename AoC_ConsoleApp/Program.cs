@@ -21,7 +21,8 @@ namespace AoC_ConsoleApp
                 //new D07_NoSpaceLeftOnDevice(),
                 //new D08_TreetopTreeHouse(),
                 //new D09_RopeBridge(),
-                new D10_CathodeRayTube(),
+                //new D10_CathodeRayTube(),
+                new D11_MonkeyInTheMiddle(),
             };
 
             foreach (IPuzzle puzzle in puzzles)
